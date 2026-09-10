@@ -1,0 +1,248 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mellow Valley</title>
+
+    <style>
+        body {
+            background-color: #ffff00;
+            font-family: "Comic Sans MS", cursive;
+            color: #0000ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .pagina {
+            width: 850px;
+            margin: 20px auto;
+            background-color: white;
+            border: 8px ridge red;
+            padding: 20px;
+            box-shadow: 15px 15px 0px black;
+        }
+
+        h1 {
+            font-size: 55px;
+            color: red;
+            text-align: center;
+            text-shadow: 5px 5px 0px lime;
+        }
+
+        h2 {
+            color: purple;
+            font-size: 30px;
+        }
+
+        .imagen-falsa {
+            width: 500px;
+            height: 180px;
+            margin: auto;
+            background: linear-gradient(
+                45deg,
+                lime,
+                yellow,
+                cyan,
+                pink
+            );
+            border: 10px dotted blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .parpadeo {
+            animation: parpadeo 0.7s infinite;
+        }
+
+        @keyframes parpadeo {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        marquee {
+            background: red;
+            color: yellow;
+            font-size: 25px;
+            padding: 5px;
+        }
+
+        .secreto {
+            display: none;
+        }
+
+        .contador {
+            border: 5px solid black;
+            background: #00ff00;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 12px;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="pagina">
+
+    <marquee>
+        ★★★★★ BIENVENIDO A MELLOW VALLEY ★★★★★
+    </marquee>
+
+    <h1>MELLOW VALLEY</h1>
+
+    <div class="MELLOWVAELLY.png">
+        MELLOW VALLEY!!!!!!!!
+    </div>
+
+    <br>
+
+    <h2>HOLA SOY 28 EL REY DEL MAL</h2>
+
+    <p>
+        YA ME CONOCEN
+    </p>
+
+    <p>
+        Y HOY QUIERO PRESENTARLES MI NUEVO EQUIPO:
+    </p>
+
+    <h1>MELLOW VALLEY</h1>
+
+    <p>
+        Un equipo completamente profesional, serio y extremadamente
+        competente.
+    </p>
+
+    <p>
+        Tenemos los mejores jugadores, las mejores rotaciones y
+        definitivamente nunca hacemos tonterías.
+    </p>
+
+    <div class="contador">
+        VISITANTES:<br>
+        <b>000001337</b>
+    </div>
+
+    <h2>🔥 NUESTROS OBJETIVOS 🔥</h2>
+
+    <ul>
+        <li>Ganar scrims</li>
+        <li>Ser mejores</li>
+        <li>Comernos a todos en el compe blo</li>
+        <li>No perder</li>
+        <li>???</li>
+    </ul>
+
+    <h2 class="parpadeo">
+        ⭐ MELLOW VALLEY ES EL FUTURO ⭐
+    </h2>
+
+    <p>
+        Gracias por visitar nuestra pagina oficial.
+    </p>
+
+    <p>
+        Atte: 28
+    </p>
+
+    <footer>
+        © 2026 Mellow Valley Inc. Todos los derechos reservados
+        probablemente.
+        <br>
+        Esta pagina fue hecha profesionalmente.
+    </footer>
+
+</div>
+
+
+<!-- =====================================================
+     ZONA SECRETA DEL ARG
+     ===================================================== -->
+
+<div id="secreto" class="secreto">
+
+    <div class="pagina">
+
+        <h1 style="color:black; text-shadow:none;">
+            ...
+        </h1>
+
+        <p style="color:black; font-family:Arial; font-size:20px;">
+
+            Hace mucho tiempo no hablamos con él.
+
+            <br><br>
+
+            No se ha conectado ni tampoco sabemos qué ha pasado
+            con él últimamente.
+
+            <br><br>
+
+            Está distante.
+
+            <br><br>
+
+            Entonces intentaremos, con ayuda de Silly,
+            darle una visita.
+
+        </p>
+
+        <br><br>
+
+        <p style="color:#555; font-family:monospace;">
+            [ MELLOW VALLEY INTERNAL PAGE ]
+        </p>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    /*
+        ARG MELLOW VALLEY
+
+        La página comprueba la última palabra de la URL.
+
+        /mellowvalley = página normal
+        /28           = página secreta
+    */
+
+    const partes = window.location.pathname
+        .split("/")
+        .filter(Boolean);
+
+    const ultimaPalabra = partes.length > 0
+        ? partes[partes.length - 1].toLowerCase()
+        : "";
+
+    if (ultimaPalabra === "28") {
+
+        document.querySelector(".pagina").style.display = "none";
+
+        document.getElementById("secreto").style.display = "block";
+
+        document.title = "28";
+
+        document.body.style.backgroundColor = "#111";
+    }
+
+</script>
+
+</body>
+</html>
+```
