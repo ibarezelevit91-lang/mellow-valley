@@ -1,0 +1,30 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mellow Valley</title>
+
+    <script>
+        /*
+        GitHub Pages nos manda aquí cuando la URL
+        no corresponde a un archivo real.
+
+        Recuperamos la ruta original y mandamos
+        al index.html para que su JavaScript
+        decida qué página mostrar.
+        */
+
+        const ruta = window.location.pathname;
+
+        window.location.replace(
+            "/mellow-valley/index.html" + ruta
+        );
+    </script>
+</head>
+
+<body>
+    Cargando...
+</body>
+</html>
+```
