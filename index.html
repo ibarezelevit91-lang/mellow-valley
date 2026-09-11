@@ -1,843 +1,128 @@
-```html
+html
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mellow Valley</title>
+    <title>Vitor</title>
 
     <style>
-
-        /* =========================================
-           ESTILO DE LA PÁGINA NORMAL
-           HORRIBLE A PROPÓSITO 🗿
-        ========================================= */
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background: #180000;
+            overflow: hidden;
+        }
 
         body {
-            margin: 0;
-            background-color: yellow;
-            font-family: "Comic Sans MS", cursive;
-            color: blue;
-        }
-
-        .pagina {
-            width: 80%;
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 25px;
-
-            background-color: white;
-
-            border: 10px ridge red;
-
-            box-shadow: 15px 15px 0px black;
-        }
-
-        h1 {
-            text-align: center;
-
-            font-size: 55px;
-
-            color: red;
-
-            text-shadow:
-                5px 5px 0px lime;
-        }
-
-        h2 {
-            color: purple;
-        }
-
-        p {
-            font-size: 18px;
-        }
-
-        marquee {
-            background-color: red;
-            color: yellow;
-
-            font-size: 25px;
-
-            padding: 8px;
-        }
-
-        .logo {
-            width: 80%;
-            height: 180px;
-
-            margin: 20px auto;
-
-            border: 8px dotted blue;
-
-            background:
-                linear-gradient(
-                    45deg,
-                    lime,
-                    yellow,
-                    cyan,
-                    pink
-                );
-
             display: flex;
-
-            align-items: center;
             justify-content: center;
-
-            font-size: 35px;
-
-            font-weight: bold;
+            align-items: center;
+            font-family: "Courier New", monospace;
+            position: relative;
         }
 
-        .visitantes {
-            width: 250px;
-
-            margin: 30px auto;
-
-            padding: 15px;
-
-            text-align: center;
-
-            background-color: lime;
-
-            border: 5px solid black;
-
-            color: black;
-        }
-
-        .parpadeo {
-
-            animation:
-                parpadear
-                0.7s
-                infinite;
-
-        }
-
-        @keyframes parpadear {
-
-            50% {
-                opacity: 0;
-            }
-
-        }
-
-        .oculto {
-            display: none;
-        }
-
-
-        /* =========================================
-           PÁGINAS SECRETAS
-        ========================================= */
-
-        .secreto {
-
-            width: 80%;
+        .imagen {
+            width: 70%;
             max-width: 800px;
 
-            margin: 100px auto;
+            filter:
+                grayscale(100%)
+                contrast(180%)
+                sepia(100%)
+                hue-rotate(300deg)
+                brightness(45%);
 
-            padding: 40px;
+            opacity: 0.9;
 
-            background-color: #111;
-
-            color: #ddd;
-
-            border: 2px solid #444;
-
-            font-family: Arial, sans-serif;
-
-            box-shadow: none;
-
+            box-shadow:
+                0 0 40px #000,
+                0 0 100px #300000;
         }
 
-        .secreto h1 {
+    
 
-            color: #ddd;
-
-            text-shadow: none;
-
-            font-size: 40px;
-
+        .secreto {
+            position: absolute;
+            color: #080000;
+            font-size: 18px;
+            z-index: 10;
+            pointer-events: none;
         }
 
-        .secreto p {
+        body::after {
+            content: "";
+            position: absolute;
+            inset: 0;
 
-            font-size: 19px;
+            background:
+                repeating-linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.08),
+                    rgba(0,0,0,0.08) 1px,
+                    transparent 1px,
+                    transparent 3px
+                );
 
-            line-height: 1.8;
-
+            pointer-events: none;
         }
 
-        .codigo {
-
-            margin-top: 60px;
-
-            color: #555;
-
-            font-family: monospace;
-
-            font-size: 14px;
-
+        .vitor {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+            color: #210000;
+            font-size: 12px;
         }
-
-        .rojo {
-
-            color: #8b0000;
-        }
-
-
-        /* =========================================
-           PÁGINA DESCONOCIDA
-        ========================================= */
-
-        .desconocido {
-
-            width: 80%;
-            max-width: 700px;
-
-            margin: 100px auto;
-
-            padding: 40px;
-
-            background: black;
-
-            color: red;
-
-            border: 3px solid red;
-
-            font-family: monospace;
-
-        }
-
-        .desconocido h1 {
-
-            color: red;
-
-            text-shadow: none;
-
-        }
-
     </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =====================================================
-     PÁGINA PRINCIPAL
-===================================================== -->
-
-<div id="principal">
-
-    <marquee>
-
-        ★★★★★ BIENVENIDO A MELLOW VALLEY ★★★★★
-
-    </marquee>
-
-
-    <div class="pagina">
-
-
-        <h1>
-
-            MELLOW VALLEY
-
-        </h1>
-
-
-        <div class="logo">
-
-            MELLOW VALLEY!!!!!!!!!
-
-        </div>
-
-
-        <h2>
-
-            HOLA SOY 28 EL REY DEL MAL 😈
-
-        </h2>
-
-
-        <p>
-
-            YA ME CONOCEN.
-
-        </p>
-
-
-        <p>
-
-            Y HOY QUIERO PRESENTARLES
-            MI NUEVO EQUIPO:
-
-        </p>
-
-
-        <h1>
-
-            MELLOW VALLEY
-
-        </h1>
-
-
-        <p>
-
-            Un equipo completamente profesional,
-            serio y extremadamente competente.
-
-        </p>
-
-
-        <p>
-
-            Tenemos los mejores jugadores,
-            las mejores estrategias y
-            definitivamente nunca hacemos tonterías.
-
-        </p>
-
-
-        <h2>
-
-            🔥 NUESTROS OBJETIVOS 🔥
-
-        </h2>
-
-
-        <ul>
-
-            <li>Ganar scrims</li>
-
-            <li>Ser mejores</li>
-
-            <li>Dominar Outcome Memories</li>
-
-            <li>No perder</li>
-
-            <li>?????</li>
-
-        </ul>
-
-
-        <div class="visitantes">
-
-            VISITANTES
-
-            <br>
-            <br>
-
-            <b>
-
-                000001337
-
-            </b>
-
-        </div>
-
-
-        <h2 class="parpadeo">
-
-            ⭐ MELLOW VALLEY ES EL FUTURO ⭐
-
-        </h2>
-
-
-        <p>
-
-            Gracias por visitar nuestra pagina oficial.
-
-        </p>
-
-
-        <p>
-
-            Atte: 28
-
-        </p>
-
-
-        <hr>
-
-
-        <small>
-
-            © 2026 Mellow Valley Inc.
-
-            <br>
-
-            Esta página fue hecha profesionalmente.
-
-            <br>
-
-            probablemente.
-
-        </small>
-
-
+    <!--
+    01000100 01100101 01110011 01100001 01110000 01100001 01110010 01100101 01100011 01101001 01101111
+    01110000 01101111 01110010
+    00110010
+    01110011 01100101 01101101 01100001 01101110 01100001 01110011
+
+    NO DEBERIAS ESTAR INSPECCIONANDO ESTO.
+    -->
+
+    <div class="vitor">
+        VITOR
     </div>
 
-</div>
-
-
-
-<!-- =====================================================
-     SECRETO: #28
-===================================================== -->
-
-<div id="pagina28" class="oculto">
+    <img src="vitor.jpg" class="imagen" alt="">
 
     <div class="secreto">
-
-
-        <h1>
-
-            ...
-
-        </h1>
-
-
-        <p>
-
-            Hace mucho tiempo no hablamos con él.
-
-        </p>
-
-
-        <p>
-
-            No se ha conectado ni tampoco sabemos
-            qué ha pasado con él últimamente.
-
-        </p>
-
-
-        <p>
-
-            Está distante.
-
-        </p>
-
-
-        <p>
-
-            Entonces intentaremos, con ayuda de Silly,
-            darle una visita.
-
-        </p>
-
-
-        <p class="codigo">
-
-            [ MELLOW VALLEY INTERNAL PAGE ]
-
-        </p>
-
-
+        El murio
     </div>
 
-</div>
+  
 
+    <audio id="vitorAudio" loop preload="auto">
+        <source src="Vitor.mp3" type="audio/mpeg">
+    </audio>
 
+    <script>
 
-<!-- =====================================================
-     SECRETO: #SILLY
-===================================================== -->
+        const audio = document.getElementById("vitorAudio");
 
-<div id="paginaSilly" class="oculto">
+        audio.volume = 0.35;
 
-    <div class="secreto">
+        window.addEventListener("load", function () {
+            audio.play().catch(function () {
+                console.log("El navegador bloqueó el autoplay.");
+            });
+        });
 
+      
+        document.addEventListener("click", function () {
+            audio.play();
+        }, { once: true });
 
-        <h1>
-
-            VISITANTE
-
-        </h1>
-
-
-        <p>
-
-            Silly aceptó ayudarnos.
-
-        </p>
-
-
-        <p>
-
-            Pero no quiere ir solo.
-
-        </p>
-
-
-        <p>
-
-            Dice que primero debemos encontrar
-            el lugar.
-
-        </p>
-
-
-        <p class="codigo">
-
-            LOCATION: UNKNOWN
-
-            <br><br>
-
-            SUBJECT: 28
-
-            <br><br>
-
-            STATUS: DISTANT
-
-        </p>
-
-
-    </div>
-
-</div>
-
-
-
-<!-- =====================================================
-     SECRETO: #07
-===================================================== -->
-
-<div id="pagina07" class="oculto">
-
-    <div class="secreto">
-
-
-        <h1>
-
-            07
-
-        </h1>
-
-
-        <p>
-
-            No deberías estar aquí.
-
-        </p>
-
-
-        <p>
-
-            Este número no pertenece al equipo.
-
-        </p>
-
-
-        <p>
-
-            Al menos eso dicen los registros.
-
-        </p>
-
-
-        <p class="codigo">
-
-            MEMBERS: 6
-
-            <br>
-
-            RECORDS FOUND: 7
-
-        </p>
-
-
-    </div>
-
-</div>
-
-
-
-<!-- =====================================================
-     CUALQUIER OTRA PALABRA
-===================================================== -->
-
-<div id="paginaDesconocida" class="oculto">
-
-    <div class="desconocido">
-
-
-        <h1>
-
-            404
-
-        </h1>
-
-
-        <p>
-
-            ESTA PAGINA NO EXISTE.
-
-        </p>
-
-
-        <p>
-
-            ...o eso creemos.
-
-        </p>
-
-
-        <br>
-
-
-        <p>
-
-            La dirección que escribiste
-            no está registrada.
-
-        </p>
-
-
-        <p>
-
-            Si estás buscando algo...
-
-        </p>
-
-
-        <p>
-
-            quizás estás buscando demasiado.
-
-        </p>
-
-
-        <br>
-
-
-        <p>
-
-            <b>
-
-                NO CAMBIES LA URL.
-
-            </b>
-
-        </p>
-
-
-    </div>
-
-</div>
-
-
-
-<script>
-
-
-/* =====================================================
-   MELLOW VALLEY ARG ENGINE
-=====================================================
-
-   La página lee lo que aparece después de #
-
-   Ejemplos:
-
-   #mellowvalley
-   #28
-   #silly
-   #07
-
-===================================================== */
-
-
-function cargarPagina() {
-
-
-    // Obtener la palabra después de #
-    let ruta = window.location.hash;
-
-
-    // Quitar el #
-    ruta = ruta.replace("#", "");
-
-
-    // Convertir todo a minúsculas
-    ruta = ruta.toLowerCase();
-
-
-    // Si no hay ninguna palabra
-    // mostrar la página principal
-
-    if (
-        ruta === "" ||
-        ruta === "mellowvalley" ||
-        ruta === "mellow-valley"
-    ) {
-
-
-        document
-            .getElementById("principal")
-            .style.display = "block";
-
-
-        document.body.style.backgroundColor =
-            "yellow";
-
-
-        document.title =
-            "Mellow Valley";
-
-
-        return;
-
-    }
-
-
-
-    /* =========================================
-       28
-    ========================================= */
-
-    if (ruta === "28") {
-
-
-        document
-            .getElementById("principal")
-            .style.display = "none";
-
-
-        document
-            .getElementById("pagina28")
-            .style.display = "block";
-
-
-        document.body.style.backgroundColor =
-            "#111";
-
-
-        document.title =
-            "28";
-
-
-        return;
-
-    }
-
-
-
-    /* =========================================
-       SILLY
-    ========================================= */
-
-    if (ruta === "silly") {
-
-
-        document
-            .getElementById("principal")
-            .style.display = "none";
-
-
-        document
-            .getElementById("paginaSilly")
-            .style.display = "block";
-
-
-        document.body.style.backgroundColor =
-            "#111";
-
-
-        document.title =
-            "Silly";
-
-
-        return;
-
-    }
-
-
-
-    /* =========================================
-       07
-    ========================================= */
-
-    if (ruta === "07") {
-
-
-        document
-            .getElementById("principal")
-            .style.display = "none";
-
-
-        document
-            .getElementById("pagina07")
-            .style.display = "block";
-
-
-        document.body.style.backgroundColor =
-            "#000";
-
-
-        document.title =
-            "07";
-
-
-        return;
-
-    }
-
-
-
-    /* =========================================
-       CUALQUIER COSA DESCONOCIDA
-    ========================================= */
-
-    document
-        .getElementById("principal")
-        .style.display = "none";
-
-
-    document
-        .getElementById("paginaDesconocida")
-        .style.display = "block";
-
-
-    document.body.style.backgroundColor =
-        "#000";
-
-
-    document.title =
-        "404";
-
-
-}
-
-
-/* Cargar al abrir */
-cargarPagina();
-
-
-/* Cargar nuevamente cuando
-   cambie la URL */
-
-window.addEventListener(
-    "hashchange",
-    cargarPagina
-);
-
-
-</script>
-
-
-</body>
-
-</html>
-```
-
+    </script>
 
 </body>
 </html>
-```
