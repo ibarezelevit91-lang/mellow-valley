@@ -41,7 +41,7 @@ html
                 0 0 100px #300000;
         }
 
-    
+     
 
         .secreto {
             position: absolute;
@@ -99,7 +99,6 @@ html
         El murio
     </div>
 
-  
 
     <audio id="vitorAudio" loop preload="auto">
         <source src="Vitor.mp3" type="audio/mpeg">
@@ -111,13 +110,13 @@ html
 
         audio.volume = 0.35;
 
+    
         window.addEventListener("load", function () {
             audio.play().catch(function () {
                 console.log("El navegador bloqueó el autoplay.");
             });
         });
 
-      
         document.addEventListener("click", function () {
             audio.play();
         }, { once: true });
